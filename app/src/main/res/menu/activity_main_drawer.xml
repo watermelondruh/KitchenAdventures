@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item android:title="Menu">
+        <menu>
+        <item
+            android:id="@+id/nav_free_breakfast"
+            android:icon="@drawable/ic_free_breakfast_black_24dp"
+            android:title="Breakfast" />
+        <item
+            android:id="@+id/nav_local_pizza"
+            android:icon="@drawable/ic_local_pizza_black_24dp"
+            android:title="Main Courses" />
+        <item
+            android:id="@+id/nav_cake_black"
+            android:icon="@drawable/ic_cake_black_24dp"
+            android:title="Dessert" />
+        <item
+            android:id="@+id/nav_local_dining"
+            android:icon="@drawable/ic_local_dining_black_24dp"
+            android:title="Restaurants" />
+        </menu>
+        </item>
+    </group>
+
+    <item android:title="Choose Your Own">
+        <menu>
+            <item
+                android:id="@+id/nav_kitchen_black"
+                android:icon="@drawable/ic_kitchen_black_24dp"
+                android:title="Recipes" />
+
+        </menu>
+    </item>
+
+</menu>

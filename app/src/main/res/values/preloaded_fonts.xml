@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/courgette</item>
+        <item>@font/cousine</item>
+        <item>@font/delius_swash_caps</item>
+        <item>@font/homemade_apple</item>
+        <item>@font/josefin_sans</item>
+        <item>@font/josefin_sans_light</item>
+        <item>@font/josefin_sans_thin</item>
+        <item>@font/julius_sans_one</item>
+        <item>@font/lato_thin</item>
+        <item>@font/muli_extralight</item>
+        <item>@font/quicksand_light</item>
+        <item>@font/quintessential</item>
+    </array>
+</resources>
