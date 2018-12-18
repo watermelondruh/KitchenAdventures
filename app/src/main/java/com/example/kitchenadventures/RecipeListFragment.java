@@ -28,9 +28,6 @@ public class RecipeListFragment extends Fragment {
     }
 
     private void wireWidgets() {
-        buttonCarrot.findViewById(R.id.button_recipeList_carrot);
-        buttonJar.findViewById(R.id.button_recipeList_jar);
-        buttonWaffle.findViewById(R.id.button_recipeList_waffle);
     }
 
 
