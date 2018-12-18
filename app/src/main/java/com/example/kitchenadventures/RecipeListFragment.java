@@ -12,17 +12,9 @@ import android.view.ViewGroup;
 import android.widget.Button;
 
 
-public class RecipeList extends Fragment {
+public class RecipeListFragment extends Fragment {
 
-    private Button buttonCarrot;
-    private Button buttonJar;
-    private Button buttonWaffle;
-    private Button buttonPesto;
-    private Button buttonChili;
-    private Button buttonNoodles;
-    private Button buttonChocolate;
-    private Button buttonCinnamon;
-    private Button buttonMuffins;
+    private Button breakfast1, breakfast2, breakfast3, mains1, mains2, mains3, dessert1, dessert2, dessert3t;
 
 
     @Nullable

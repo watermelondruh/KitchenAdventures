@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@android:color/holo_blue_dark"
-    tools:context=".RecipeList">
+    tools:context=".RecipeListFragment">
 
     <!-- TODO: Update blank fragment layout -->
 
