@@ -12,11 +12,13 @@ import android.widget.TextView;
 
 public class RecipeActivity extends AppCompatActivity {
 
+    public static final String EXTRA_RECIPEID = "recipeId";
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        int recipeId = 0;
+        int recipeId = (Integer) getIntent().getExtras().get(EXTRA_RECIPEID);
         Recipe recipe = Recipe.recipes[recipeId];
 
         TextView title = findViewById(R.id.textView_recipe_title);

@@ -10,4 +10,16 @@
 
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="what_will_be_your_kitchen_adventure_today">What will be your kitchen adventure today?</string>
+    <string name="carrot_cake_oatmeal">Carrot Cake Oatmeal</string>
+    <string name="chia_smoothie_jars">Chia Smoothie Jars</string>
+    <string name="buckwheat_oat_pancakes">Buckwheat Oat Pancakes</string>
+    <string name="sweet_spicy_miso_tofu"><![CDATA[Sweet & Spicy Miso Tofu]]></string>
+    <string name="avocado_pesto">Avocado \'Pesto\'</string>
+    <string name="meaty_vegan_chili">Meaty Vegan Chili</string>
+    <string name="chocolate_bundt_cake">Chocolate Bundt Cake</string>
+    <string name="cinnamon_rolls">Cinnamon Rolls</string>
+    <string name="green_tea_muffins">Green Tea Muffins</string>
+    <string name="ingredients">Ingredients:</string>
+    <string name="instructions">Instructions:</string>
+    <string name="recipe_image">recipe image</string>
 </resources>

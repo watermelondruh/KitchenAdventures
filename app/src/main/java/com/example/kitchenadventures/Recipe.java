@@ -46,7 +46,7 @@ public class Recipe {
                     "-2 cloves garlic\n" +
                     "-4 tbsp plant-based milk\n" +
                     "-salt and pepper to taste\n", "1. Combine all the ingredients in a blender and whizz into a creamy sauce.\n2. Toss with 2 servings of cooked pasta & enjoy!", R.drawable.mains2),
-            new Recipe("'Meaty' Vegan Chili", "-1 onion, diced\n" +
+            new Recipe("Meaty Vegan Chili", "-1 onion, diced\n" +
                     "-3 cloves garlic, minced\n" +
                     "-1/2 can chipotle peppers in adobo sauce (adjust to taste)\n" +
                     "-1/2 tsp cumin, 1 tbsp chili powder\n" +
