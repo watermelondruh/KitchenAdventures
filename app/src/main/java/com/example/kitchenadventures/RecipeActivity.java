@@ -25,7 +25,7 @@ public class RecipeActivity extends AppCompatActivity {
 
 
         TextView title = findViewById(R.id.textView_recipe_title);
-        title.setText("Random Stuff");
+        title.setText(recipe.getName());
 
         TextView ingredients = findViewById(R.id.textView_recipe_ingredients);
         ingredients.setText(getString(R.string.Ingredients));

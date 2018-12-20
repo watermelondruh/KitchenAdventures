@@ -18,10 +18,6 @@
             android:id="@+id/nav_cake_black"
             android:icon="@drawable/ic_cake_black_24dp"
             android:title="Dessert" />
-        <item
-            android:id="@+id/nav_local_dining"
-            android:icon="@drawable/ic_local_dining_black_24dp"
-            android:title="Restaurants" />
         </menu>
         </item>
     </group>

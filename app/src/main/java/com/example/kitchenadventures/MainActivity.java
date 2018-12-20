@@ -121,9 +121,9 @@ public class MainActivity extends AppCompatActivity
                     .commit();
         }
 
-        if (id == R.id.nav_local_dining) {
-            newFragment = new RestaurantFragment();
-        }
+        //if (id == R.id.nav_local_dining) {
+        //    newFragment = new RestaurantFragment();
+        //}
 
         if(newFragment != null){
             FragmentManager fm = getSupportFragmentManager();
