@@ -1,167 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@android:color/holo_blue_dark"
-    tools:context=".RecipeListFragment">
+    android:orientation="vertical">
 
-    <!-- TODO: Update blank fragment layout -->
-
-    <Button
-        android:id="@+id/button_recipeList_breakfast1"
-        android:layout_width="295dp"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="4dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:background="#50000000"
-        android:fontFamily="@font/josefin_sans"
-        android:text="@string/carrot_cake_oatmeal"
-        app:layout_constraintBottom_toTopOf="@+id/button_recipeList_breakfast2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_chainStyle="spread_inside" />
-
-    <Button
-        android:id="@+id/button_recipeList_breakfast2"
-        android:layout_width="295dp"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="4dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="4dp"
-        android:background="#50000000"
-        android:fontFamily="@font/josefin_sans"
-        android:text="@string/chia_smoothie_jars"
-        app:layout_constraintBottom_toTopOf="@+id/button_recipeList_breakfast3"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button_recipeList_breakfast1"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <Button
-        android:id="@+id/button_recipeList_breakfast3"
-        android:layout_width="295dp"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="4dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="4dp"
-        android:background="#50000000"
-        android:fontFamily="@font/josefin_sans"
-        android:text="@string/buckwheat_oat_pancakes"
-        app:layout_constraintBottom_toTopOf="@+id/button_recipeList_mains1"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button_recipeList_breakfast2" />
-
-    <Button
-        android:id="@+id/button_recipeList_mains1"
-        android:layout_width="295dp"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="4dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="4dp"
-        android:background="#50000000"
-        android:fontFamily="@font/josefin_sans"
-        android:text="@string/sweet_spicy_miso_tofu"
-        app:layout_constraintBottom_toTopOf="@+id/button_recipeList_mains2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button_recipeList_breakfast3"
-        app:layout_constraintVertical_bias="0.615" />
-
-    <Button
-        android:id="@+id/button_recipeList_mains2"
-        android:layout_width="295dp"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="4dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="4dp"
-        android:background="#50000000"
-        android:fontFamily="@font/josefin_sans"
-        android:text="@string/avocado_pesto"
-        app:layout_constraintBottom_toTopOf="@+id/button_recipeList_mains3"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.506"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button_recipeList_mains1" />
-
-    <Button
-        android:id="@+id/button_recipeList_mains3"
-        android:layout_width="295dp"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="4dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="4dp"
-        android:background="#50000000"
-        android:fontFamily="@font/josefin_sans"
-        android:text="@string/meaty_vegan_chili"
-        app:layout_constraintBottom_toTopOf="@+id/button_recipeList_dessert1"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button_recipeList_mains2" />
-
-    <Button
-        android:id="@+id/button_recipeList_dessert1"
-        android:layout_width="295dp"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="4dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="4dp"
-        android:background="#50000000"
-        android:fontFamily="@font/josefin_sans"
-        android:text="@string/chocolate_bundt_cake"
-        app:layout_constraintBottom_toTopOf="@+id/button_recipeList_dessert2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button_recipeList_mains2" />
-
-    <Button
-        android:id="@+id/button_recipeList_dessert2"
-        android:layout_width="295dp"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="4dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="4dp"
-        android:background="#50000000"
-        android:fontFamily="@font/josefin_sans"
-        android:text="@string/cinnamon_rolls"
-        app:layout_constraintBottom_toTopOf="@+id/button_recipeList_dessert3"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.506"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button_recipeList_dessert1" />
-
-    <Button
-        android:id="@+id/button_recipeList_dessert3"
-        android:layout_width="295dp"
+    <ListView
+        android:id="@+id/list_recipeListFragment_recipes"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="4dp"
-        android:background="#50000000"
-        android:fontFamily="@font/josefin_sans"
-        android:text="@string/green_tea_muffins"
+        android:layout_marginTop="8dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button_recipeList_dessert2" />
-</android.support.constraint.ConstraintLayout>
+        app:layout_constraintTop_toTopOf="parent" />
+</LinearLayout>

@@ -22,4 +22,6 @@
     <string name="ingredients">Ingredients:</string>
     <string name="instructions">Instructions:</string>
     <string name="recipe_image">recipe image</string>
+    <string name="Ingredients">Ingredients:</string>
+    <string name="Instructions">Instructions:</string>
 </resources>

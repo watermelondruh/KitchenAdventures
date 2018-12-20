@@ -22,15 +22,21 @@ public class RecipeActivity extends AppCompatActivity {
         Recipe recipe = Recipe.recipes[recipeId];
 
         TextView title = findViewById(R.id.textView_recipe_title);
-        title.setText(recipe.getName());
+        title.setText("Random Stuff");
 
-        TextView ingredientList = (TextView) findViewById(R.id.textView_recipe_ingredientList);
+        TextView ingredients = findViewById(R.id.textView_recipe_ingredients);
+        ingredients.setText(getString(R.string.Ingredients));
+
+        TextView ingredientList = findViewById(R.id.textView_recipe_ingredientList);
         ingredientList.setText(recipe.getIngredients());
 
-        TextView instructionList = (TextView) findViewById(R.id.textView_recipe_instructionnList);
+        TextView instructions = findViewById(R.id.textView_recipe_instructions);
+        instructions.setText(getString(R.string.Instructions));
+
+        TextView instructionList = findViewById(R.id.textView_recipe_instructionList);
         instructionList.setText(recipe.getInstructions());
 
-        ImageView photo = (ImageView) findViewById(R.id.imageView_recipe);
+        ImageView photo = findViewById(R.id.imageView_recipe);
         photo.setImageResource(recipe.getImageResourceId());
     }
 }

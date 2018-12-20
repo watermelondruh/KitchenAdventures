@@ -2,7 +2,6 @@ package com.example.kitchenadventures;
 
 import android.content.Context;
 import android.content.Intent;
-import android.net.Uri;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
@@ -10,11 +9,37 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
-
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
+import android.widget.ListView;
 
 public class RecipeListFragment extends Fragment {
 
+    public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container,
+                             @Nullable Bundle savedInstanceState) {
+        // Inflate the layout for this fragment
+        View view = inflater.inflate(R.layout.fragment_recipe_list, container, false);
+
+        ListView listRecipes = view.findViewById(R.id.list_recipeListFragment_recipes);
+        ArrayAdapter<Recipe> listAdapter = new ArrayAdapter<Recipe>(getContext(), android.R.layout.simple_list_item_1, Recipe.recipes);
+        listRecipes.setAdapter(listAdapter);
+
+        AdapterView.OnItemClickListener itemClickListener = new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                Intent intent = new Intent(getActivity(), RecipeActivity.class);
+                intent.putExtra(RecipeActivity.EXTRA_RECIPEID, (int) id);
+                startActivity(intent);
+            }
+        };
+
+        listRecipes.setOnItemClickListener(itemClickListener);
+
+        return view;
+    }
+
+
+    /*
     private Button breakfast1, breakfast2, breakfast3, mains1, mains2, mains3, dessert1, dessert2, dessert3;
     @Nullable
     @Override
@@ -64,7 +89,7 @@ public class RecipeListFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getActivity(), RecipeActivity.class);
-                intent.putExtra(RecipeActivity.EXTRA_RECIPEID, 3);
+                intent.putExtra(RecipeActivity.EXTRA_RECIPEID, 3)
                 startActivity(intent);
             }
         });
@@ -108,7 +133,6 @@ public class RecipeListFragment extends Fragment {
                 startActivity(intent);
             }
         });
-    }
-
+        */
 
 }
