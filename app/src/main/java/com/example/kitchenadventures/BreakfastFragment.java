@@ -17,7 +17,6 @@ import android.widget.TextView;
 public class BreakfastFragment extends Fragment {
 
     private Button buttonRandomize;
-    private int x;
 
     @Nullable
     @Override
@@ -41,25 +40,10 @@ public class BreakfastFragment extends Fragment {
         });
     }
 
-    private int randomize() {
-        x = (int) (Math.random() * 3);
-        if(x == 0){
-            return 0;
-        }
-        else if (x == 1) {
-            return 1;
-        }
-        else {
-            return 2;
-        }
+    public int randomize() {
+        int x = (int)(Math.random() * 3);
+        return x;
     }
-
-    private void wireWidgets() {
-        buttonRandomize.findViewById(R.id.button_breakfast);
-    }
-
-
-
 
 }
 

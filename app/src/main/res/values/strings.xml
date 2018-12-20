@@ -22,5 +22,6 @@
     <string name="Ingredients">Ingredients:</string>
     <string name="Instructions">Instructions:</string>
     <string name="recipe_image">recipe image</string>
+    <string name="welcome_to_kitchen_adventures">Welcome to Kitchen Adventures!</string>
     <string-array name="restaurants">restaurants</string-array>
 </resources>

@@ -16,7 +16,6 @@ import android.widget.TextView;
 
 public class DessertFragment extends Fragment {
 
-    private int x;
     private Button buttonRandomize;
 
     @Nullable
@@ -45,16 +44,8 @@ public class DessertFragment extends Fragment {
         });
     }
 
-    private int randomize() {
-        x = (int) (Math.random() * 3);
-        if(x == 0){
-            return 6;
-        }
-        else if (x == 1) {
-            return 7;
-        }
-        else {
-            return 8;
-        }
+    public int randomize() {
+        int x = 6 + (int)(Math.random()*3);
+        return x;
     }
 }
