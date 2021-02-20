@@ -19,9 +19,9 @@
     <string name="chocolate_bundt_cake">Chocolate Bundt Cake</string>
     <string name="cinnamon_rolls">Cinnamon Rolls</string>
     <string name="green_tea_muffins">Green Tea Muffins</string>
-    <string name="ingredients">Ingredients:</string>
-    <string name="instructions">Instructions:</string>
-    <string name="recipe_image">recipe image</string>
     <string name="Ingredients">Ingredients:</string>
     <string name="Instructions">Instructions:</string>
+    <string name="recipe_image">recipe image</string>
+    <string name="welcome_to_kitchen_adventures">Welcome to Kitchen Adventures!</string>
+    <string-array name="restaurants">restaurants</string-array>
 </resources>

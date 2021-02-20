@@ -14,7 +14,7 @@ import android.widget.Button;
 import android.widget.TextView;
 
 
-public class BreakfastFragment extends Fragment {
+public class MainsFragment extends Fragment {
 
     private Button buttonRandomize;
 
@@ -23,8 +23,8 @@ public class BreakfastFragment extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container,
                              @Nullable Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View rootView = inflater.inflate(R.layout.fragment_breakfast, container, false);
-        buttonRandomize = rootView.findViewById(R.id.button_breakfast);
+        View rootView = inflater.inflate(R.layout.fragment_main, container, false);
+        buttonRandomize = rootView.findViewById(R.id.button_mains);
         setListeners();
         return rootView;
     }
@@ -41,9 +41,7 @@ public class BreakfastFragment extends Fragment {
     }
 
     public int randomize() {
-        int x = (int)(Math.random() * 3);
+        int x = 3 + (int)(Math.random()*3);
         return x;
     }
-
 }
-

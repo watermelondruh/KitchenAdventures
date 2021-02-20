@@ -17,12 +17,15 @@ public class RecipeActivity extends AppCompatActivity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_recipe);
+
 
         int recipeId = (Integer) getIntent().getExtras().get(EXTRA_RECIPEID);
         Recipe recipe = Recipe.recipes[recipeId];
 
+
         TextView title = findViewById(R.id.textView_recipe_title);
-        title.setText("Random Stuff");
+        title.setText(recipe.getName());
 
         TextView ingredients = findViewById(R.id.textView_recipe_ingredients);
         ingredients.setText(getString(R.string.Ingredients));
